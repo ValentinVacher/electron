@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title></title>
+    <link href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="show-item.css">
+    <link rel="stylesheet" href="../global-style/globale-style.css">
+</head>
+<body>
+    <header class="text-center shadow py-4 mb-4">
+        <h1 id="title"></h1>
+    </header>
+
+    <main class="container">
+        <section class="d-inline-flex justify-content-end w-100 my-2" id="button">
+            <button id="updateButton"></button>
+            <button id="deleteButton"></button>
+        </section>
+
+        <section class="my-4 bg-whitSmoke shadow p-5 rounded">
+            <h2 id="destination"></h2>
+
+            <img src="" id="image" alt="image" class="my-4 img-fluid text-center mx-auto d-block">
+
+            <h2 class="text-center mb-4">Resumer de l'offre</h2>
+
+            <p id="smallDesc" class="text-break"></p>
+
+            <h2 class="text-center my-4">Description de l'offre</h2>
+
+            <p class="mb-5 text-break" id="longDesc"></p>
+
+            <p class="text-end fs-5">Prix : <span class="fw-bold p-2 rounded blue" id="price"></span></p>
+        </section>
+    </main>
+
+    <script src="../../controllers/show-item/show-item.controller.js"></script>
+    <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

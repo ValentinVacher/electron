@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>Modifier une offre</title>
+    <link href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../global-style/globale-style.css">
+</head>
+<body>
+<main class="container">
+    <div class="bg-whitSmoke rounded shadow p-3 w-100 my-5 d-block">
+        <h1 class="text-center mb-4">Ajouter une offre</h1>
+
+        <form>
+            <div class="mb-2">
+                <label for="title" class="form-label">Titre :</label>
+                <input type="text" class="form-control" id="title" placeholder="Entrez le titre de l'offre" name="title">
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-6">
+                    <label for="destination" class="form-label">Destination :</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Entrez la destination de l'offre" name="destination">
+                </div>
+
+                <div class="col-6">
+                    <label for="price" class="form-label">Prix :</label>
+                    <input type="number" class="form-control" id="price" placeholder="Entrez le prix de l'offre" min="0" step="0.01" name="price">
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <label for="image" class="form-label">Image :</label>
+                <input type="text" class="form-control" id="image" placeholder="Entrez l'url de l'image de l'offre" name="image">
+            </div>
+
+            <div class="mb-2">
+                <label for="smallDesc" class="form-label">Résumé :</label>
+                <textarea class="form-control" id="smallDesc" rows="5" placeholder="Faite un cour résumé de l'offre" maxlength="300" name="smallDesc"></textarea>
+                <p class="text-end form-text" id="counter">Caractère restant : <span>300</span></p>
+            </div>
+
+            <div class="mb-2">
+                <label for="longDesc" class="form-label">Déscription :</label>
+                <textarea class="form-control" id="longDesc" rows="15" placeholder="Entrez la déscription de l'offre" name="longDesc"></textarea>
+            </div>
+
+            <div id="response-message" class="py-3 alert" hidden></div>
+
+            <button></button>
+        </form>
+    </div>
+</main>
+
+<script src="../../controllers/update-item/update-item.controller.js"></script>
+<script src="../../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

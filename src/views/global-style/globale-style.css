@@ -1,0 +1,14 @@
+header{
+    background: rgb(71,62,227);
+    background: linear-gradient(90deg, rgba(71,62,227,1) 0%, rgba(0,212,255,1) 0%, rgba(0,110,255,1) 100%);
+    color: darkblue;
+}
+
+.blue{
+    background-color: #00baff;
+    color: darkblue;
+}
+
+.bg-whitSmoke{
+    background-color: whitesmoke;
+}

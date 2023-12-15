@@ -1,0 +1,17 @@
+img{
+    object-fit: cover;
+}
+
+.card{
+    min-height: 200px;
+}
+
+.card:hover{
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card .row{
+    min-height: 198px;
+}
